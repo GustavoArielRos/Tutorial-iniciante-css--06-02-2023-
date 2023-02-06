@@ -1,0 +1,119 @@
+<!-- '#' para id-->
+<!-- '.' para classe-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- o css é usado no head-->
+    <!-- tudo que ta dentro do "style" é do css-->
+    <style type="text/css">
+
+        /*
+           Estilização de todos os 'h1'
+        */
+
+        h1{
+            color: #ff0000;/* escolhendo a cor em hexadecimal(no caso é o vermelho*/
+            font-family: "verdana";/*fonte da letra*/
+            font-size:20px;/*tamanho da letra em 'px'*/
+            font-weight: 500;/*quanto de negrito a fonte vai ter(vai de 0 a 900, de 100 em 100)*/
+            font-style: italic;/*o estilo da fonte*/
+        }
+        /*
+           Estilização de todos os 'h1' que possuem a class = 'estilizada'
+        */
+        h1.estilizada{
+            color:gray;/* escolhendo a cor em hexadecimal(no caso é o vermelho*/
+            font-family: "verdana";/*fonte da letra*/
+            font-size:20px;/*tamanho da letra em 'px'*/
+            font-weight: 500;/*quanto de negrito a fonte vai ter(vai de 0 a 900, de 100 em 100)*/
+            font-style: italic;/*o estilo da fonte*/
+        }
+        
+        /*
+           Estilização de todos os 'h1' que estão dentro da 'div' que é class = filha2
+        */
+        div.filha2 h1{
+            color:green;/* escolhendo a cor em hexadecimal(no caso é o vermelho*/
+            font-family: "verdana";/*fonte da letra*/
+            font-size:20px;/*tamanho da letra em 'px'*/
+            font-weight: 500;/*quanto de negrito a fonte vai ter(vai de 0 a 900, de 100 em 100)*/
+            font-style: italic;/*o estilo da fonte*/
+
+        }
+        /*
+           Estilização dos  'h1' das classes 'pai'
+        */
+
+        .pai h1{
+            color:green;/* escolhendo a cor em hexadecimal(no caso é o vermelho*/
+            font-family: "verdana";/*fonte da letra*/
+            font-size:20px;/*tamanho da letra em 'px'*/
+            font-weight: 500;/*quanto de negrito a fonte vai ter(vai de 0 a 900, de 100 em 100)*/
+            font-style: italic;/*o estilo da fonte*/
+
+        }
+
+        /*
+           Estilização dos  'h1' da ID 'pai'
+        */
+
+        #pai-id h1{
+            color:green;/* escolhendo a cor em hexadecimal(no caso é o vermelho*/
+            font-family: "verdana";/*fonte da letra*/
+            font-size:20px;/*tamanho da letra em 'px'*/
+            font-weight: 500;/*quanto de negrito a fonte vai ter(vai de 0 a 900, de 100 em 100)*/
+            font-style: italic;/*o estilo da fonte*/
+
+        }
+        /*
+           Estilização de todos os 'p'
+        */
+
+        p{
+            color:#0000dd;
+            text-align: justify;/*alinhamento do texto*/
+            text-transform: capitalize ;/*cada palavra do texto vai ter letra maiúsca(no caso do capitalize)*/
+            text-decoration: line-through;/*vão ser as linhas decorativas para o texto*/
+            word-spacing:20px;/*espaço entre as palavras*/
+            letter-spacing: 10px;/*espaço entre as palavras*/
+        }
+        /*
+           Estilização de todos os 'a'
+        */
+
+        a{
+            text-decoration: none;/*tirando a linha que embaixo no link no default*/
+        }
+    </style>
+</head>
+<body>
+    <div class = 'pai' id="pai-id">
+        <div class = 'filha'>
+            <h1 class="estabilizada">
+                Estilizada
+            </h1>
+            <h1 class="classe-estilizada">
+                Classe Estilizada
+            </h1>
+            <a href="https://pt.wikipedia.org/wiki/Texto"> link do texto</a>
+            <p>
+                Um texto pode ser escrito ou oral e, em sentido lato, pode ser também não verbal.
+                Texto crítico é uma produção textual que parte de um processo reflexivo e analítico 
+                gerando um conteúdo com crítica construtiva e bem fundamentada.
+
+            </p>
+
+        </div>
+        <div class = 'filha2'>
+
+        </div>
+    </div>
+    
+</body>
+</html>

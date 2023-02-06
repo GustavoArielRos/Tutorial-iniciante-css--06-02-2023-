@@ -1,0 +1,77 @@
+/*margin,border,padding são os tipos de borda que o objeto possui
+  sendo a margin a mais distante e a padding mais próxima do objeto*/
+
+/*todos irão receber esse estilo*/
+*{
+    margin:0;
+
+    /*posso realizar as margins no quatro lados*/
+    /*
+    margin-top: ;
+    margin-bottom: ;
+    margin-left: ;
+    margin-right: ;
+    */
+}
+
+/*estilizando a "div" que possue a 'id' controler*/
+
+#controler{
+    margin:0 auto;
+    padding:0;
+    width:700px;
+    height: auto;
+}
+/*estilizando a "div" com a classe conteiner-head*/
+.conteiner-head{
+    /*espaço em relação a borda*/
+    margin:0 auto;
+    padding:0;
+
+    width:700px;/*largura*/
+    height:200px;/*altura*/
+    background-color: red;/*cor de fundo da classe*/
+    float:left;
+}
+
+/*estilizando todos os 'h1' que são da "div" com a classe conteiner-head*/
+.conteiner-head h1{
+    padding: 10px 30px;
+    font-family: verdana;
+    font-size:30px;
+    color: rgb(184, 214, 218);/*outra maneira de escolher a cor*/
+    float: left;/* define a flutuação do elemento*/
+    display:block;/* como será exibido na tela(nesse caso será exibido como bloco)*/
+    position:relative;/*definindo os valores da posição(vai setar a posição de acordo com o elemento que for encontrado),usasse como último recurso*/
+    /*Isso a position relative aceita, voce usa isso junto com a relative*/
+    top: 10px;
+    left: 30px;
+    float:left;
+}
+
+.conteiner-body{
+    margin:0 auto;
+    padding:0;
+    width: 500px;
+    height:500px;
+    background-color: green;
+    float:left;
+}
+
+.conteiner-sidebar{
+    margin:0 auto;
+    padding:0;
+    width: 200px;
+    height:500px;
+    background-color: blue;
+    float:left;
+}
+
+.conteiner-footer{
+    margin:0 auto;
+    padding:0;
+    width: 700px;
+    height:250px;
+    background-color: gray;
+    float:left;
+}
